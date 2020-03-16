@@ -1,0 +1,21 @@
+2020-03-16 10:50:06.206 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==>  Preparing: UPDATE tb_user_info SET user_name = ? where user_id=? 
+2020-03-16 10:50:06.234 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==> Parameters: 修改后的用户名称(String), 1161(Long)
+2020-03-16 10:50:06.239 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -<==    Updates: 1
+2020-03-16 10:50:06.242 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==>  Preparing: SELECT user_id,user_name,user_password,gender,user_img,user_score,user_state, user_status,user_team,user_create_time,user_update_time FROM tb_user_info WHERE user_id = ? 
+2020-03-16 10:50:06.243 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==> Parameters: 1161(Long)
+2020-03-16 10:57:31.120 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==>  Preparing: UPDATE tb_user_info SET user_name = ? where user_id=? 
+2020-03-16 10:57:31.150 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==> Parameters: 修改后的用户名称(String), 1161(Long)
+2020-03-16 10:57:31.151 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -<==    Updates: 1
+2020-03-16 10:57:31.154 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==>  Preparing: SELECT user_id,user_name,user_password,gender,user_img,user_score,user_state, user_status,user_team,user_create_time,user_update_time FROM tb_user_info WHERE user_id = ? 
+2020-03-16 10:57:31.154 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==> Parameters: 1161(Long)
+2020-03-16 10:58:40.497 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==>  Preparing: UPDATE tb_user_info SET user_name = ? where user_id=? 
+2020-03-16 10:58:40.703 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==> Parameters: 修改后的用户名称(String), 1161(Long)
+2020-03-16 10:58:40.713 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -<==    Updates: 1
+2020-03-16 10:58:40.722 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==>  Preparing: SELECT user_id,user_name,user_password,gender,user_img,user_score,user_state, user_status,user_team,user_create_time,user_update_time FROM tb_user_info WHERE user_id = ? 
+2020-03-16 10:58:40.723 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==> Parameters: 1161(Long)
+2020-03-16 11:00:50.974 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==>  Preparing: UPDATE tb_user_info SET user_name = ? where user_id=? 
+2020-03-16 11:00:51.011 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -==> Parameters: 修改后的用户名称(String), 1161(Long)
+2020-03-16 11:00:51.012 [main] DEBUG com.boom.assassin.dao.UserInfoDao.updateUserInfo -<==    Updates: 1
+2020-03-16 11:00:51.015 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==>  Preparing: SELECT user_id,user_name,user_password,gender,user_img,user_score,user_state, user_status,user_team,user_create_time,user_update_time FROM tb_user_info WHERE user_id = ? 
+2020-03-16 11:00:51.016 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -==> Parameters: 1161(Long)
+2020-03-16 11:00:51.035 [main] DEBUG com.boom.assassin.dao.UserInfoDao.queryByUserId -<==      Total: 1

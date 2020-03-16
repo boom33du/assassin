@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.boom.assassin.dao.UserInfoDao">
+    <resultMap id="userMap" type="com.boom.assassin.entity.UserInfo">
+        <id property="userId" column="user_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="userImg" column="user_img"/>
+        <result property="gender" column="gender"/>
+        <result property="userPassword" column="user_password"/>
+        <result property="userScore" column="user_score"/>
+        <result property="userState" column="user_state"/>
+        <result property="userStatus" column="user_status"/>
+        <result property="userTeam" column="user_team"/>
+        <result property="userCreateTime" column="user_create_time"/>
+        <result property="userUpdateTime" column="user_update_time"/>
+    </resultMap>
+
+    <select id="queryByUserId" resultMap="userMap" parameterType="long">
+        SELECT user_id,user_name,user_password,gender,user_img,user_score,user_state,
+               user_status,user_team,user_create_time,user_update_time
+        FROM tb_user_info
+        WHERE user_id = #{userId}
+    </select>
+
+
+    <insert id="insertUserInfo" keyProperty="userId" keyColumn="user_id" useGeneratedKeys="true">
+        INSERT INTO
+        tb_user_info(user_name,user_img,gender,user_state,user_score,user_create_time,
+        user_status,user_password)
+        VALUES
+        (#{userName},#{userImg},#{gender},#{userState},#{userScore},#{userCreateTime},#{userStatus},#{userPassword})
+    </insert>
+
+
+    <update id="updateUserInfo" parameterType="com.boom.assassin.entity.UserInfo">
+        UPDATE tb_user_info
+        <set>
+            <if test="userName != null">user_name = #{userName},</if>
+            <if test="userPassword != null">user_password = #{userPassword},</if>
+            <if test="userImg != null">user_img = #{userImg},</if>
+            <if test="gender != null">gender = #{gender},</if>
+            <if test="userState != null">user_state= #{userState},</if>
+            <if test="userScore != null">user_score = #{userScore},</if>
+            <if test="userStatus != null">user_status = #{userStatus}</if>
+        </set>
+        where user_id=#{userId}
+
+    </update>
+
+</mapper>

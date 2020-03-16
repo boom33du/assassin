@@ -1,0 +1,20 @@
+package com.boom.assassin;
+
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+/**
+ * 用来配置spring和junit整合,junit启动时加载springIOC容器
+ *
+ * @author Zhang Qitao
+ * @create 2020-03-16 10:36
+ */
+
+@RunWith(SpringJUnit4ClassRunner.class)
+//告诉junit spring配置文件的位置
+@ContextConfiguration({"classpath:spring/spring-dao.xml","classpath:spring/spring-service.xml"})
+
+public class BaseTest {
+
+}
